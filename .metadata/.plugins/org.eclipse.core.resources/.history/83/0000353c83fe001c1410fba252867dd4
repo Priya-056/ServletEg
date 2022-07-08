@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- --REQUEST--
+<%String name=request.getParameter("uname"); %>
+<%=("Welcome "+name) %> 
+--RESPONSE--
+<%response.sendRedirect("http://www.google.com"); %>
+-->
+
+<%String a=request.getParameter("uname");
+String driver=config.getInitParameter("dname");
+out.println("Driver name is: "+driver);
+%>
+</body>
+</html>
